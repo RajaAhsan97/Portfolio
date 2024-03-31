@@ -1,0 +1,344 @@
+body {
+    border: 10px solid dodgerblue;
+}
+
+.contentBody {
+    background-color: azure;
+}
+
+.bgImage {
+    background-image: url('image/hero-bg.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-position-y: 50px;
+    background-size: cover;
+    background-attachment: fixed;
+    height: 600px; 
+    /* opacity: 0.5; */
+
+}
+
+.content-overlay {
+    position: relative;
+    text-align: center;
+}
+
+.text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%); 
+}
+
+.text a {
+    text-decoration: none;
+    padding: 10px 30px 10px 30px;
+    background-color: dodgerblue;
+    border-radius: 30px;
+    color: white;
+}
+
+.footer .footerMarg {
+    margin-top: 50px;
+    padding-top: 1px;
+    background-color: dodgerblue;
+}
+
+.footer {
+    background-color: dodgerblue;
+    padding-bottom: 3px;
+}
+
+.footer p {
+    text-align: center;
+
+}
+
+.footer span {
+    color: white;
+}
+
+/* About page styling  */
+.Info {
+    padding-top: 80px;
+    margin-left: 50px;
+    margin-right: 50px;
+    text-align: center;
+}
+
+.Info h2 {
+    display: inline;
+    border-bottom: 3px solid dodgerblue;
+}
+
+.Information {
+    display: flex;
+
+}
+
+.Information .image {
+    padding-top: 25px;
+}
+
+.Information .content {
+    margin-left: 20px;
+}
+
+.cont {
+    display: flex;
+}
+
+.cont .column1, .cont .column2 {
+    width: 50%;
+    text-align: left;
+}
+
+.cont .column1 h4 {
+    display: inline;
+}
+
+.cont .column2 h4 {
+    display: inline;
+}
+
+.content h1, .content p {
+    text-align: left;
+}
+
+/* Skills progress bars  */
+.Info .skills {
+    margin-top: 30px;
+}
+
+.Info .skills .skillsProgressBars {
+    display: flex;
+}
+
+.Info .skills .skillsProgressBars .ProgBarCol1, .Info .skills .skillsProgressBars .ProgBarCol2 {
+    width: 50%;
+}
+
+.skillsProgressBars .verticalspacing {
+    margin-top: 20px;
+}
+
+.skillsProgressBars .domainAndProgress {
+    display: flex;
+}
+
+.skillsProgressBars .domainAndProgress .domain, .skillsProgressBars .domainAndProgress .progressBar {
+    width:50%;
+}
+
+.skillsProgressBars .domainAndProgress .domain {
+    text-align: left;
+    /* width: 50%; */
+}
+
+.skillsProgressBars .domainAndProgress .progressBar {
+    text-align: right;
+    /* width: 50%; */
+}
+
+.skillsProgressBars span {
+    color: white;
+}
+
+.ProgBarCol1 .Column, .ProgBarCol2 .Column {
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.ProgBarCol1 .skill1 {
+    background-color: gainsboro;
+    border-radius: 10px;
+}
+
+.ProgBarCol1 .skill1 .skill1Progress {
+    width: 50%;
+    height: 10px;
+    background-color: dodgerblue;
+    border-top-left-radius: 10px ;
+    border-bottom-left-radius: 10px;   
+}
+
+.ProgBarCol1 .skill2 {
+    background-color: gainsboro;
+    border-radius: 10px;
+}
+.ProgBarCol1 .skill2 .skill2Progress {
+    width: 80%;
+    height: 10px;
+    background-color: dodgerblue;
+    border-top-left-radius: 10px ;
+    border-bottom-left-radius: 10px;   
+}
+
+.ProgBarCol1 .skill3 {
+    background-color: gainsboro;
+    border-radius: 10px;
+}
+
+.ProgBarCol1 .skill3 .skill3Progress {
+    width: 60%;
+    height: 10px;
+    background-color: dodgerblue;
+    border-top-left-radius: 10px ;
+    border-bottom-left-radius: 10px;   
+}
+
+
+.ProgBarCol2 .skill4 {
+    background-color: gainsboro;
+    border-radius: 10px;
+}
+
+.ProgBarCol2 .skill4 .skill4Progress {
+    width: 80%;
+    height: 10px;
+    background-color: dodgerblue;
+    border-top-left-radius: 10px ;
+    border-bottom-left-radius: 10px;   
+}
+
+.ProgBarCol2 .skill5 {
+    background-color: gainsboro;
+    border-radius: 10px;
+}
+.ProgBarCol2 .skill5 .skill5Progress {
+    width: 80%;
+    height: 10px;
+    background-color: dodgerblue;
+    border-top-left-radius: 10px ;
+    border-bottom-left-radius: 10px;   
+}
+
+.ProgBarCol2 .skill6 {
+    background-color: gainsboro;
+    border-radius: 10px;
+}
+
+.ProgBarCol2 .skill6 .skill6Progress {
+    width: 20%;
+    height: 10px;
+    background-color: dodgerblue;
+    border-top-left-radius: 10px ;
+    border-bottom-left-radius: 10px;   
+}
+
+
+.Info .facts {
+    margin-top: 50px;
+}
+
+.facts .factInfo {
+    display: flex;
+}
+
+.facts .factInfo .size {
+    width: 30%;
+
+}
+
+.facts .factInfo .figure {
+    font-size: 40px;
+}
+
+
+/* Resume page */
+.resumeContent {
+    display: flex;
+}
+
+.resumeContent .ContentCol {
+    width: 50%;
+    padding-left: 10px;
+}
+
+.resumeContent .ContentCol h1 {
+    text-align: left;
+}
+
+.summary, .education, .experience {
+    border-left: 3px solid dodgerblue;
+    position: relative;
+}
+
+.education span {
+    background-color: lightblue;
+    color: dodgerblue;
+    padding: 5px;
+}
+
+/* .education span p {
+    padding-top: 5px;
+} */
+
+.summary:before {
+    position: absolute;
+    bottom: 143px;
+    left: -13px;
+    width: 20px;
+    height: 20px;
+    background-color: azure;
+    content:"";
+    border-radius: 15px;
+    border: 2px solid dodgerblue;
+}
+
+.summary .objective, .education .educationDetail1, .education .educationDetail2, 
+.education .educationDetail3, .experience .experience1 {
+    padding-left: 15px;
+    text-align: left;
+}
+
+.educationDetail1, .educationDetail2, .educationDetail3, .experience1 {
+    position: relative
+}
+.educationDetail1:before {
+    position: absolute;
+    bottom: 122px;
+    left: -13px;
+    width: 20px;
+    height: 20px;
+    background-color: azure;
+    content:"";
+    border-radius: 15px;
+    border: 2px solid dodgerblue;
+}
+
+.educationDetail2:before {
+    position: absolute;
+    bottom: 122px;
+    left: -13px;
+    width: 20px;
+    height: 20px;
+    background-color: azure;
+    content:"";
+    border-radius: 15px;
+    border: 2px solid dodgerblue;
+}
+
+.educationDetail3:before {
+    position: absolute;
+    bottom: 122px;
+    left: -13px;
+    width: 20px;
+    height: 20px;
+    background-color: azure;
+    content:"";
+    border-radius: 15px;
+    border: 2px solid dodgerblue;
+}
+
+.experience1:before {
+    position: absolute;
+    bottom: 212px;
+    left: -13px;
+    width: 20px;
+    height: 20px;
+    background-color: azure;
+    content:"";
+    border-radius: 15px;
+    border: 2px solid dodgerblue;
+}
