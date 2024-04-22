@@ -1,21 +1,56 @@
-body {
+body {    
+    background-color: dodgerblue;
     border: 10px solid dodgerblue;
+}
+
+body h1, body h2 {
+    font-family: "Overpass", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 700;
+    font-style: normal;
+}
+
+body h5 {
+    font-family: "Lora", serif;
+    font-optical-sizing: auto;
+    font-weight: 600;
+    font-style: normal;
+
+}
+
+body p {
+    font-family: "Lora", serif;
+    font-optical-sizing: auto;
+    font-weight: 500;
+    font-style: normal;
 }
 
 .contentBody {
     background-color: azure;
 }
 
+.navbar-toggler {
+    background-color: grey !important;
+    border-radius: 10px !important;
+}
+.navbar-toggler-icon {
+    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba%28255, 255, 255, 1%29' stroke-linecap='round' stroke-miterlimit='10' stroke-width='3' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e") !important;
+}
+
+.Nav a {
+    color: white;
+    font-weight: bold;
+}
+
 .bgImage {
-    background-image: url('image/hero-bg.jpg');
+    background-image: url('image/bg.jpg');
     background-repeat: no-repeat;
     background-position: center;
-    background-position-y: 50px;
-    background-size: cover;
+    background-position-y: 45px;
+    background-size: 100% auto;
     background-attachment: fixed;
     height: 600px; 
-    /* opacity: 0.5; */
-
+    background-color: azure;
 }
 
 .content-overlay {
@@ -25,10 +60,12 @@ body {
 
 .text {
     position: absolute;
-    top: 50%;
+    top: 40%;
     left: 50%;
     transform: translate(-50%, -50%); 
+    color: white;
 }
+
 
 .text a {
     text-decoration: none;
@@ -36,6 +73,8 @@ body {
     background-color: dodgerblue;
     border-radius: 30px;
     color: white;
+    font-weight: bold;
+    font-size: 20px;
 }
 
 .footer .footerMarg {
@@ -44,9 +83,11 @@ body {
     background-color: dodgerblue;
 }
 
+
 .footer {
     background-color: dodgerblue;
     padding-bottom: 3px;
+    padding-top: 3px;
 }
 
 .footer p {
@@ -63,12 +104,18 @@ body {
     padding-top: 80px;
     margin-left: 50px;
     margin-right: 50px;
+    margin-bottom: 40px;
     text-align: center;
+
 }
 
 .Info h2 {
     display: inline;
     border-bottom: 3px solid dodgerblue;
+}
+
+.Info .about p, .Info .content .contentPara, .Info .skills p {
+    text-align: justify;
 }
 
 .Information {
@@ -81,7 +128,8 @@ body {
 }
 
 .Information .content {
-    margin-left: 20px;
+    margin-left: 30px;
+    margin-top: 20px;
 }
 
 .cont {
@@ -89,7 +137,6 @@ body {
 }
 
 .cont .column1, .cont .column2 {
-    width: 50%;
     text-align: left;
 }
 
@@ -114,10 +161,6 @@ body {
     display: flex;
 }
 
-.Info .skills .skillsProgressBars .ProgBarCol1, .Info .skills .skillsProgressBars .ProgBarCol2 {
-    width: 50%;
-}
-
 .skillsProgressBars .verticalspacing {
     margin-top: 20px;
 }
@@ -126,9 +169,6 @@ body {
     display: flex;
 }
 
-.skillsProgressBars .domainAndProgress .domain, .skillsProgressBars .domainAndProgress .progressBar {
-    width:50%;
-}
 
 .skillsProgressBars .domainAndProgress .domain {
     text-align: left;
@@ -155,7 +195,7 @@ body {
 }
 
 .ProgBarCol1 .skill1 .skill1Progress {
-    width: 50%;
+    width: 70%;
     height: 10px;
     background-color: dodgerblue;
     border-top-left-radius: 10px ;
@@ -180,7 +220,7 @@ body {
 }
 
 .ProgBarCol1 .skill3 .skill3Progress {
-    width: 60%;
+    width: 50%;
     height: 10px;
     background-color: dodgerblue;
     border-top-left-radius: 10px ;
@@ -194,7 +234,7 @@ body {
 }
 
 .ProgBarCol2 .skill4 .skill4Progress {
-    width: 80%;
+    width: 40%;
     height: 10px;
     background-color: dodgerblue;
     border-top-left-radius: 10px ;
@@ -219,12 +259,12 @@ body {
 }
 
 .ProgBarCol2 .skill6 .skill6Progress {
-    width: 20%;
+    width: 60%;
     height: 10px;
     background-color: dodgerblue;
     border-top-left-radius: 10px ;
     border-bottom-left-radius: 10px;   
-}
+} 
 
 
 .Info .facts {
@@ -246,12 +286,16 @@ body {
 
 
 /* Resume page */
+.Info p, .Info li {
+    text-align: justify;
+}
+
 .resumeContent {
     display: flex;
 }
 
 .resumeContent .ContentCol {
-    width: 50%;
+    /* width: 50%; */
     padding-left: 10px;
 }
 
@@ -341,4 +385,62 @@ body {
     content:"";
     border-radius: 15px;
     border: 2px solid dodgerblue;
+}
+
+.resumeContent .ContentCol h1{
+    margin-top: 20px;
+}
+
+
+@media screen and (max-width: 768px) {
+    .bgImage {
+        background-attachment: inherit;
+    }
+
+    .text {
+        top: 60%;
+    }
+
+    .text h2 {
+        font-size: 14px;
+    }
+    .text a{
+        font-size: 10px;
+        padding: 5px 7px 5px 7px;
+        border-radius: 10px;
+    }
+
+    .Information .content {
+        margin-left: 0;
+    }
+
+    .cont .column1, .cont .column2 {
+        width: 100%;
+    }
+
+    .Info .skills .skillsProgressBars .ProgBarCol1, .Info .skills .skillsProgressBars .ProgBarCol2 {
+        width: 100%;
+    }
+
+    .skillsProgressBars .domainAndProgress {
+        display: flex;
+    }
+
+    .skillsProgressBars .domainAndProgress .progressBar, .skillsProgressBars .domainAndProgress .domain {
+        width: 50%;
+    }
+
+    .Info .skills .skillsProgressBars .ProgBarCol2 {
+        margin-top: 20px;
+    }
+
+    .Info p, .Info li {
+        width: 100%;
+        text-align: justify;
+    }
+
+    .resumeContent .ContentCol {
+        width: 100%;
+    }
+    
 }
